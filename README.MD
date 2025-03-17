@@ -25,23 +25,13 @@ Bag of Words (palavras embaralhadas):
 ['green', 'in', 'daylight', 'he', 'entreat', 'business', 'bright', 'yet', 'is', 'fairest', '.', 'says', 'light', 'window', 'cheek', 'the', ':', ',', 'moon', 'for']
 
 Using natural language toolkit:
-POS tags (primeiros 10):
+POS tags:
 [('But', 'CC'), (',', ','), ('soft', 'JJ'), ('!', '.'), ('what', 'WP'), ('light', 'VBD'), ('through', 'RP'), ('yonder', 'NN'), ('window', 'NN'), ('breaks', 'NNS')]
       0   1     2   3     4      5        6       7       8       9   10   11   ...   334   335 336  337  338  339 340     341 342 343      344 345
 Word  But   ,  soft   !  what  light  through  yonder  window  breaks   ?   It  ...    my  love   ,  And    I  'll  no  longer  be   a  Capulet   .     
 POS    CC   ,    JJ   .    WP    VBD       RP      NN      NN     NNS   .  PRP  ...  PRP$    NN   ,   CC  PRP   MD  RB      RB  VB  DT      NNP   .     
 
-Using SpaCy to get parts of speech tags:
-POS tags com SpaCy (primeiros 10):
-[('\n', '_SP', 'SPACE'), ('But', 'CC', 'CCONJ'), (',', ',', 'PUNCT'), ('soft', 'JJ', 'ADJ'), ('!', '.', 'PUNCT'), ('what', 'WP', 'PRON'), ('light', 'NN', 'NOUN'), ('through', 'IN', 'ADP'), ('yonder', 'NN', 'NOUN'), ('window', 'NN', 'NOUN')]
-0      1      2     3      4     5      6        7       8       9    
-Word     \n    But      ,  soft      !  what  light  through  yonder  window 
-Tag     _SP     CC      ,    JJ      .    WP     NN       IN      NN      NN  
-POS   SPACE  CCONJ  PUNCT   ADJ  PUNCT  PRON   NOUN      ADP    NOUN    NOUN 
-
-Diferença entre tokenização por sentenças e por palavras:
-A tokenização por sentenças divide o texto em unidades completas,
-enquanto a tokenização por palavras separa cada palavra individualmente, fazendo uma análise detalhada como POS tagging.
+A tokenização por sentenças divide o texto em unidades completas de pensamento,
+tokenização por palavras separa cada palavra individualmente, fazendo análise detalhada
 
 POS tags encontrados com NLTK: 'WDT', 'CC', 'RBR', 'RB', 'DT', 'JJS'
-POS tags encontrados com SpaCy: 'CC', 'WDT', 'RBR', 'RB', 'DT', 'UH'
